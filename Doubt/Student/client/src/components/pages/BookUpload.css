@@ -1,0 +1,32 @@
+html {
+    height: 100%;
+}
+.bg_im{
+    color: orangered;
+    box-sizing: border-box;
+    background-color: #C8BCA7;
+    border-radius: 20px;
+    max-width: 560px;
+    margin-top: 50px;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, white, #C8BCA7);
+}
+
+input[type=text],input[type="number"]
+{
+
+    border-radius: 10px;
+    outline: none;
+
+    border: none;
+    width: calc(100%);
+    text-align: center;
+}
+.button_design:hover{
+    background-color: red;
+}

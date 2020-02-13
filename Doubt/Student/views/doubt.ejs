@@ -1,0 +1,10 @@
+<%- include("partials/header"); -%>
+<h1>Doubts</h1>
+<% doubts.forEach(function(doubt){ %>
+  <div>
+  <h3><b>Title: </b><%= doubt.title %></h3>
+  <p><%= doubt.desc.substring(0, 100) + " ..." %><a href="/api/doubts/display/<%=doubt._id%>">Read more</a></p>
+  </div>
+<% }); %>
+<h4><a href="http://localhost:3000/doubt">Click Here </a>to post your doubt</h4>
+<%- include("partials/footer"); -%>

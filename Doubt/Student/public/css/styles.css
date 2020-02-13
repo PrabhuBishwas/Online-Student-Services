@@ -1,0 +1,81 @@
+body{
+  background: #C8F4EF;
+}
+.navbar-bg1 {
+    background-color: #ff4c68;
+}
+.navbar-brand{
+  font-family: Ubuntu;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.l{
+  font-size: 1.2rem;
+  color: #E5DBDB;
+  margin-right: 12px;
+}
+.brd{
+  font-weight: bold;
+  font-size: 2rem;
+}
+.upper1{
+  margin-top: 20px;
+}
+.f1{
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.form-control{
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid white;
+  margin-top: 7px;
+}
+.share-btn{
+  margin-top: 20px;
+}
+.profile-card{
+  width: 450px;
+  margin: auto;
+  margin-top: 40px;
+  background: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.image-container{
+  position: relative;
+}
+.info{
+  color: #4b4be2;
+  margin-right: 16px;
+}
+.main-container{
+  padding: 20px;
+}
+.whats{
+  margin: 0 0 20px 15px;
+}
+.posting{
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+td{
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 35px;
+}
+
+.main, .sub{
+  list-style: none;
+}
+.reply{
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 12px;
+}

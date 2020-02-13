@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Glegoo&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: 'Glegoo', serif;
+            background-image: linear-gradient(to bottom right, white, #C8BCA7);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-img {
+            /* The image used */
+            background-image: url("library.jpg");
+
+            min-height: 474px;
+            /*380*/
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Add styles to the form container */
+        .container {
+            position: absolute;
+            right: 0;
+            margin: 20px;
+            max-width: 300px;
+            padding: 16px;
+            background-color: white;
+            background-image: linear-gradient(to bottom right, white, #C8BCA7);
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password],
+        input[type=email] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h3>Already BOOKSTRAPed &#128515; <a href="login.html">Login Here</a></h3>
+    <div class="bg-img">
+        <form action="signup_insert.php" method="post" enctype="multipart/form-data" autocomplete="off" class="container">
+            <h1>Signup</h1>
+
+            <label for="id"><b>ID</b></label>
+            <input type="text" placeholder="Enter Username" name="userid" required>
+            
+            <label for="name"><b>Name</b></label>
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" name="password" placeholder="Enter Password" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" name="email" placeholder="yourname@example.com" required>
+
+            <input type="submit" value="Signup" name="submit" class="btn">
+
+        </form>
+    </div>
+
+    <p>A good book will keep you fascinated for days. A good bookshop for your whole life.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+    <title>Online Book Store</title>
+    <link rel="stylesheet" type="text/css" href="indexcss.css">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        <img class="mainlogo" src="sitelogo.JPG">
+        <a href="account.html">Home</a>
+        <a href="wish.html">Books</a>
+        <a href="login.html">Buy Now</a>
+        <input id="zsearch" class="sbar" type="search" placeholder="Search..." >
+        <img id="zglass" onclick="show()" class="glass" src="mglass.png">
+        <img class="cart" src="cart.png">
+    </div>
+    <div >
+        <img class="himage" src="homeimage.JPG">
+    </div>
+    <div class="bsellerstext">
+        <p style="font-size: 30px;margin-bottom: 0px">Bestsellers</p>
+        <p style="font-size: 15px;color: gray;margin-top: 0px">Top selling books of 2019</p>
+        <div class="bsellerbooks">
+            <img class="book" src="WhereTheCrawdadsSing.jpg"><br><br>
+            Where the Crawdads Sing<br>
+            <span style="color: grey; font-size: 10px;margin-top: 5%">LITERARY FICTION</span><br><br>
+            <img src="rupeesymbol.jpg" style="height: 2%;width: 5%;background-color: white"> 280
+            <img src="plus.png" style="height: 2%;width: 7%;float: right;">
+        </div>
+        
+        <div class="bsellerbooks">
+            <img class="book" src="Becoming.jpg"><br><br>
+            Becoming<br>
+            <span style="color: grey; font-size: 10px;margin-top: 5%">MEMOIR</span><br><br><br>
+            <img src="rupeesymbol.jpg" style="height: 2%;width: 5%;background-color: white"> 350
+            <img src="plus.png" style="height:2%;width: 7%;float: right;">
+        </div>
+        
+        <div class="bsellerbooks">
+            <img class="book" src="Educated.jpg"><br><br>
+            Educated<br>
+            <span style="color: grey; font-size: 10px;margin-top: 5%">MEMOIR</span><br><br><br>
+            <img src="rupeesymbol.jpg" style="height: 2%;width: 5%;background-color: white"> 300
+            <img src="plus.png" style="height: 2%;width: 7%; float: right">
+        </div>
+        
+        <div class="bsellerbooks">
+            <img class="book" src="GirlWashYourFace.jpg"><br><br>
+            Girl Wash Your Face<br>
+            <span style="color: grey; font-size: 10px;margin-top: 5%">CRISTIAN LITERATURE</span><br><br><br>
+            <img src="rupeesymbol.jpg" style="height: 2%;width: 5%;background-color: white"> 180
+            <img src="plus.png" style="height: 2%;width: 7%; float: right">
+        </div>
+        
+        <div class="bsellerbooks">
+            <img class="book" src="UnfreedomOfThePress.jpg"><br><br>
+            Educated<br>
+            <span style="color: grey; font-size: 10px;margin-top: 5%">POLITICS & CURRENT EVENTS</span><br><br><br>
+            <img src="rupeesymbol.jpg" style="height: 2%;width: 5%;background-color: white"> 270
+            <img src="plus.png" style="height: 2%;width: 7%; float: right">
+        </div>
+    </div>
+    
+    <div class="author">
+        <p style="font-size: 30px;margin-bottom: 0px">Author of the Month</p>
+        <p style="font-size: 15px;color: gray;margin-top: 0px">And his/her Bestsellers</p>
+        <div class="authorimg">
+            <div class="left">
+                <img src="JKRowling.jpg" style="width: 100%;height: 65%;">
+            </div>
+            
+            <div class="authortext">
+                <span style="font-size: 30px;">J.K. Rowling</span><br>
+                <span style="color: grey;">Novel Prize Winner 2008</span><br><br>
+                <span>Born in Yate, Gloucestershire, Rowling was working as a researcher and bilingual secretary for Amnesty International when she conceived the idea for the Harry Potter series while on a delayed train from Manchester to London in 1990. The seven-year period that followed saw the death of her mother, birth of her first child, divorce from her first husband, and relative poverty until the first novel in the series, Harry Potter and the Philosopher's Stone, was published in 1997. There were six sequels, of which the last, Harry Potter and the Deathly Hallows, was released in 2007. Since then, Rowling has written five books for adult readers: The Casual Vacancy (2012) and—under the pseudonym Robert Galbraith—the crime fiction Cormoran Strike series, which consists of The Cuckoo's Calling (2013), The Silkworm (2014), Career of Evil (2015), and Lethal White (2018).</span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var temp = 0;
+        function show()
+        {
+            if(temp == 0)
+            {
+                document.getElementById("zsearch").style.zIndex=0;
+                var k=document.getElementById("zglass");
+                k.style.width="15px";
+                k.style.height="15px";
+                temp = 1;
+            }
+            else
+            {
+                document.getElementById("zsearch").style.zIndex=-1;
+                var k=document.getElementById("zglass");
+                k.style.width="20px";
+                k.style.height="20px";
+                temp = 0;
+            }
+        }
+    </script>
+</body>
+</html>

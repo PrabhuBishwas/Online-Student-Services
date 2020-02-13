@@ -1,0 +1,9 @@
+<%- include("partials/header"); -%>
+<h1><b>Title: </b><%= title %></h1>
+<p><b>Problem Description:</b> <br /><%= desc %></p>
+<p>
+  <b>Reply:</b><br> <%= type %>
+  </p>
+<button type="button" class="btn btn-primary rep" name="button" onclick='window.open("http://localhost:3000/reply", "_self")'>Reply</button>
+<div class="form-group">
+<%- include("partials/footer"); -%>

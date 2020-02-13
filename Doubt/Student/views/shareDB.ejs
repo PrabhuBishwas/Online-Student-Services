@@ -1,0 +1,24 @@
+<%- include("partials/header"); -%>
+<% if (locals.errors) { %>
+<ul>
+         <li>Please type a valid information</li>
+
+</ul>
+<% } %>
+    <h1 class="text-center upper1">Enter Date and Time of Your Journey</h1>
+    <form class="f1" action="/api/trip/triplist" method="post" autocomplete="off">
+      <input type="text" class="form-control" name="name" placeholder="Name" required>
+      <input type="number" class="form-control" name="phone" placeholder="Phone Number" required>
+      <input type="date" class="form-control" name="date" placeholder="Date" required>
+      <input type="time" class="form-control" name="time" placeholder="Time" required>
+      <label>From</label>
+      <input type="text" class="form-control" name="from" placeholder="From" required>
+      <label>To</label>
+      <input type="text" class="form-control" name="to" placeholder="To" required>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg share-btn" name="button">Submit</button>
+      </div>
+
+    </form>
+
+  <%- include("partials/footer"); -%>

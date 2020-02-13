@@ -1,0 +1,55 @@
+<%- include("partials/header"); -%>
+<br>
+<center>
+  <input style="width: 400px; height: 45px; border: 3px solid #555; " id="myInput" type="text" placeholder="Search..">
+  </center>
+<h1>Trip</h1>
+<% trips.forEach(function(post){ %>
+<div class="posting">
+  <center>
+    <table id="myTable">
+      <tr>
+        <td>Name: </td>
+        <td><%= post.name %></td>
+      </tr>
+      <tr>
+        <td>Phone: </td>
+        <td><%= post.phone %></td>
+      </tr>
+      <tr>
+        <td>Date: </td>
+        <td><%= post.date %></td>
+      </tr>
+      <tr>
+        <td>Time: </td>
+        <td><%= post.time %></td>
+      </tr>
+      <tr>
+        <td>From: </td>
+        <td><%= post.from %></td>
+      </tr>
+      <tr>
+        <td>To: </td>
+        <td><%= post.to %></td>
+      </tr>
+    </table>
+    </center>
+
+  <button type="button" class="btn btn-success btn-lg whats" onclick='window.open("https://api.whatsapp.com/send?phone=+91<%post.phone%>&text=Hi")'><i class="fab fa-whatsapp"></i> whatsapp</button>
+</div>
+<% }); %>
+<center>
+  <h3 style="margin-top: 20px;">If you want to submit your trips <a href="/shareTrip">Click Here</a></h3>
+</center>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable ").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+<%- include("partials/footer"); -%>
